@@ -1,4 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Web page using Next.js
+## Technology used :-
+
+~ Next.js
+~ Css (Grid & Flexbox)
+~ Sass
+~ Media queries (For Responsive)
+~ Material UI
+~ React icons
+
+## Live - https://klenty-assignment-john.vercel.app
 
 ## Getting Started
 
