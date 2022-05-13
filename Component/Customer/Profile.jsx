@@ -44,7 +44,7 @@ const Profile = () => {
     {
       id: 3,
       quotation: "/quotation.png",
-      img: "/Adam.png",
+      img: "/Adam-1.png",
       name: "Gavin Tye",
       desc: "Sales Director , Red Eye ",
       content:
