@@ -1,0 +1,166 @@
+.acceleration_container {
+  width: 100vw;
+  height: auto;
+  padding: 5rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 246, 255, 0) -12.61%,
+    #ebf6ff 50.78%,
+    rgba(235, 246, 255, 0) 114.7%
+  );
+  .acceleration_content {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .container_header {
+    text-align: center;
+    h1 {
+      font-family: "Paytone One";
+      color: var(--color-secondary);
+      font-size: 40px;
+      font-style: normal;
+      margin: 0;
+      padding: 2rem 0;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0;
+      font-family: "poppins";
+      font-weight: 500;
+      font-size: 18px;
+      font-style: normal;
+      padding-bottom: 3rem;
+      color: #343434;
+    }
+  }
+
+  .container_cards {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+
+    .card_title {
+      color: var(--color-secondary);
+    }
+
+    .card_description {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #343434;
+    }
+  }
+}
+
+/*--------------Media Query For Larg Devices----------------*/
+
+@media only screen and (max-width: 1067px) {
+  .acceleration_container {
+    .acceleration_content {
+      max-width: 900px;
+
+      .container_header {
+        h1 {
+          font-size: 35px !important;
+          padding: 1rem 0;
+          font-weight: 400;
+        }
+      }
+
+      .container_cards {
+        .card_title {
+          font-size: 1.2rem;
+        }
+        .card_description {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .acceleration_container {
+    .acceleration_content {
+      max-width: 700px;
+      padding: 2rem;
+
+      .container_header {
+        h1 {
+          font-size: 40px !important;
+          padding: 1rem 0;
+          font-weight: 400;
+        }
+      }
+
+      .container_cards {
+        grid-auto-flow: row;
+
+        .card_title {
+          font-size: 1.8rem;
+        }
+        .card_description {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/*--------------Media Query For Tablets----------------*/
+
+@media only screen and (max-width: 670px) {
+  .acceleration_container {
+    .acceleration_content {
+      max-width: 550px;
+      padding: 2rem;
+
+      .container_header {
+        h1 {
+          font-size: 35px !important;
+          padding: 1rem 0;
+          font-weight: 400;
+        }
+      }
+        .card_title {
+          font-size: 1.5rem;
+        }
+        .card_description {
+          font-size: 1rem;
+        }
+    }
+  }
+}
+
+/*--------------Media Query For Phone----------------*/
+
+@media only screen and (max-width: 480px) {
+  .acceleration_container {
+    .acceleration_content {
+      max-width: 450px;
+
+      .container_header {
+        h1 {
+          font-size: 35px !important;
+          padding: 1rem 0;
+          font-weight: 400;
+        }
+        p{
+          font-size: 16px !important;
+          
+        }
+      }
+        .card_title {
+          font-size: 1.3rem !important;
+        }
+        .card_description {
+          font-size: 1rem !important;
+        }
+    }
+  }
+}

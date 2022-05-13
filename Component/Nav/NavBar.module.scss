@@ -1,0 +1,67 @@
+.nav_bar {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  padding: 1rem;
+
+  .nav_action {
+    max-width: 1500px;
+    margin: 0 0 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    right: 0;
+    padding-right: 1rem;
+
+    .login_button {
+      color: #05034e;
+    }
+    .demo_button {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+    .try_button {
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+/*--------------Media Query For Larg Devices----------------*/
+
+@media only screen and (max-width: 1248px) {
+  .nav_bar {
+    height: 5rem;
+    padding: 0.1rem !important;
+
+    .nav_action {
+      grid-gap: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .nav_action {
+    grid-gap: 0.5rem;
+    padding-right: 1rem;
+  }
+}
+
+/*--------------Media Query For Tablets----------------*/
+
+@media only screen and (max-width: 628px) {
+
+  .nav_action{
+    display: none;
+    .login_button{
+      display: none !important;
+    }
+    .demo_button{
+      display: none !important;
+    }
+  }
+}
+

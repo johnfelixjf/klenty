@@ -1,0 +1,48 @@
+.customer_reviews {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+
+  h1 {
+    color: var(--color-secondary);
+    font-family: "Paytone One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+  }
+}
+
+/*--------------Media Query For Larg Devices----------------*/
+
+@media only screen and (max-width: 1067px) {
+  .customer_reviews {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .customer_reviews {
+    max-width: 700px;
+  }
+}
+
+/*--------------Media Query For Tablets----------------*/
+
+@media only screen and (max-width: 670px) {
+  .customer_reviews {
+    max-width: 550px;
+  }
+}
+
+/*--------------Media Query For Phone----------------*/
+
+@media only screen and (max-width: 480px) {
+  .customer_reviews {
+    max-width: 350px;
+    
+    h1{
+      font-size: 25px;
+    }
+  }
+}

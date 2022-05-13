@@ -1,0 +1,163 @@
+.customer_profile {
+  padding-top: 3rem;
+  width: 70%;
+  margin: 0 auto;
+
+  .profile {
+    display: grid !important;
+    grid-auto-flow: column !important;
+
+    .review {
+      text-align: left;
+
+      h2 {
+        font-size: 1.2rem;
+        width: 80%;
+        color: var(--color-secondary);
+      }
+
+      .company {
+        padding-top: 2rem;
+        display: flex;
+
+        .v1 {
+          margin: 0 1rem;
+          border-left: 2px solid grey;
+          height: 4rem;
+        }
+
+        h3 {
+          margin: 0;
+          padding-bottom: 1rem;
+        }
+
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 197px;
+    margin-top: 0;
+
+    .prev_next {
+      position: relative;
+      
+      width: 108px;
+      justify-content: space-between;
+      height: 48px;
+      background: #ebf6ff;
+      border-radius: 10px;
+    }
+    .left_button {
+      padding-bottom: 1rem;
+      padding-right: 4rem;
+      position: absolute;
+      width: 15px;
+      height: 0px;
+      color: #5856ce;
+      cursor: pointer;
+    }
+    .right_button {
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      position: absolute;
+      width: 15px;
+      height: 0px;
+      color:#5856CE;
+      cursor: pointer;
+    }
+  }
+}
+
+/*--------------Media Query For Larg Devices----------------*/
+
+@media only screen and (max-width: 1067px) {
+  .customer_profile {
+    width: 90%;
+
+    .profile {
+      .review {
+        h2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .customer_profile {
+    width: 80%;
+    padding: 2rem;
+
+    .profile {
+      grid-auto-flow: row !important;
+
+      .review {
+        order: 1;
+        .company {
+          align-items: center;
+        }
+        h2 {
+          font-size: 1.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*--------------Media Query For Tablets----------------*/
+
+@media only screen and (max-width: 670px) {
+  .customer_profile {
+    width: 100% !important;
+    .profile {
+      grid-auto-flow: row;
+
+      .review {
+        order: 1;
+        .company {
+          align-items: center;
+        }
+        h2 {
+          font-size: 1.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*--------------Media Query For Phone----------------*/
+
+@media only screen and (max-width: 480px) {
+  .customer_profile {
+    width: 100%;
+    padding: 0;
+
+    .customer_profile {
+      width: 100% !important;
+      .profile {
+        grid-auto-flow: row;
+
+        .review {
+          order: 1;
+          font-size: 1.3rem;
+          h2 {
+            width: 100%;
+          }
+          .company {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
