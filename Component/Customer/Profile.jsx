@@ -24,7 +24,7 @@ const Profile = () => {
     {
       id: 1,
       quotation: "/quotation.png",
-      img: "/Adam.png",
+      img: "/adam.png",
       name: "Adam Weinger",
       desc: "President,Double The Donation ",
       content:
@@ -44,7 +44,7 @@ const Profile = () => {
     {
       id: 3,
       quotation: "/quotation.png",
-      img: "/Adam-1.png",
+      img: "/adam-1.png",
       name: "Gavin Tye",
       desc: "Sales Director , Red Eye ",
       content:
