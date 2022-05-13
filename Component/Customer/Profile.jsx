@@ -57,7 +57,6 @@ const Profile = () => {
   return (
     <div className={classes.customer_profile}>
       <Slider ref={slider} {...settings}>
-
         {profiles.map((profile) => {
           return (
             <div className={classes.profile} key={profile.id}>
@@ -89,18 +88,15 @@ const Profile = () => {
       {/*---------------Bottom Profile Carousel------------------*/}
 
       <div className={classes.buttons}>
-        <div className={classes.prev_next}></div>
-        <div
-          className={classes.left_button}
-          onClick={() => slider?.current?.slickPrev()}
-        >
-          <AiOutlineArrowLeft size={18} />
-        </div>
-        <div
-          className={classes.right_button}
-          onClick={() => slider?.current?.slickNext()}
-        >
-          <AiOutlineArrowRight size={18} />
+        <div className={classes.prev_next}>
+          <AiOutlineArrowLeft
+            size={18}
+            onClick={() => slider?.current?.slickPrev()}
+          />
+          <AiOutlineArrowRight
+            size={18}
+            onClick={() => slider?.current?.slickNext()}
+          />
         </div>
       </div>
     </div>

@@ -47,30 +47,15 @@
 
     .prev_next {
       position: relative;
-      
+      align-items: center;
       width: 108px;
       justify-content: space-between;
       height: 48px;
       background: #ebf6ff;
       border-radius: 10px;
-    }
-    .left_button {
-      padding-bottom: 1rem;
-      padding-right: 4rem;
-      position: absolute;
-      width: 15px;
-      height: 0px;
-      color: #5856ce;
-      cursor: pointer;
-    }
-    .right_button {
-      padding-bottom: 1rem;
-      padding-left: 2rem;
-      position: absolute;
-      width: 15px;
-      height: 0px;
-      color:#5856CE;
-      cursor: pointer;
+      display: flex;
+      padding: 0.8rem;
+      color: #5856CE;
     }
   }
 }
